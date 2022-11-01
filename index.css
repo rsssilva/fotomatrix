@@ -1,0 +1,344 @@
+/* Reset User Agent Stylesheet
+--------------------------------------*/
+* { 
+    margin: 0;
+    margin-block: 0;
+    margin-inline: 0;
+    padding: 0;
+    padding-block: 0;
+    padding-inline: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/* Typography
+--------------------------------------*/
+html {
+    font-size: 16px;
+    font-family: Roboto, Tahoma, sans-serif;
+    line-height: 1.5;
+}
+h1 {
+    font-family:  Rubik, Tahoma, sans-serif;
+    font-size: 3rem;
+    line-height: 1;
+}
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+h3,
+blockquote {
+    font-family: "Playfair Display", Times, serif;
+    font-size: 1.5rem;
+}
+a,
+p { 
+    font-size: 1.15rem;
+}
+.txt_white {
+    color: white;
+}
+.txt_charcoal {
+    color: #4A4A4A;
+}
+.txt_light {
+    font-weight: lighter;
+}
+#copyright {
+    font-size: 0.85rem;
+}
+#logo_txt {
+    font-family: "roboto mono", "courier new", monospace;
+    font-size: 1.5rem;
+    line-height: 1;
+}
+#logo_txt:hover {
+    cursor: pointer;
+}
+
+/* Background Colors
+--------------------------------------*/
+.bg_white {
+    background-color: white;
+}
+.bg_charcoal {
+    background-color:#4A4A4A;
+}
+.bg_gb {
+    background-color:gainsboro;
+}
+
+/* Universal Elements
+--------------------------------------*/
+.flex {
+    display: flex;
+}
+
+/* Header
+--------------------------------------*/
+header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 4.75rem;
+    width: 100%;
+    padding: 0 1.75rem;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+#logo_mobile {
+    display: none;
+}
+nav {
+    position: relative;
+    top: 0.15rem;
+}
+.nav_txt {
+    margin-left: 1.5rem;
+}
+.nav_txt:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+#ig_logo {
+    height: 1.1rem;
+    margin-left: 0.3rem;
+    position: relative;
+    top: 0.125rem;
+}
+#nav_mobile {
+    display: none;
+}
+
+/* Main
+--------------------------------------*/
+main {
+    margin-top: 4.75rem;
+}
+
+/* Start
+--------------------------------------*/
+#strip_start {
+    align-items: center;
+    background-image: url("./resources/images/banner-landingpage.jpg");
+    background-size: cover;
+    height: 60vw;
+}
+#box_start {
+    flex-direction: column;
+    justify-content: center;
+    height: 25rem;
+    width: 35rem;
+    margin-left: 3rem;
+    padding: 0 5rem 1rem;
+    background-color: #9DC20A;
+    border-radius: 0.25rem;
+    text-align: center;
+}
+button {
+    border-radius: 0.3rem;
+    height: 4rem;
+    margin-top: 1.75rem;
+    font-size: 1.25rem;
+}
+button:hover {
+    background-color: gainsboro;
+    color: #4A4A4A;
+    cursor: pointer;
+}
+
+/* Feature
+--------------------------------------*/
+#strip_feature {
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.box_feature {
+    margin: 4rem 1.75rem;
+    padding: 2rem 2rem 4rem;
+    border: 2px solid white;
+}
+.box_feature:hover {
+    border: 2px solid #4A4A4A;
+    cursor: pointer;
+}
+.box_feature img {
+    width: 100%;
+}
+.txt_feature {
+    text-align: center;
+    margin-top: 2.5rem;
+}
+
+/* Filters
+--------------------------------------*/
+#strip_filters {
+    flex-direction: column;
+}
+#txt_filters {
+    text-align: center;
+    padding: 3.5rem 1rem 3rem;
+}
+#strip_filters_images {
+    justify-content: center;
+    padding: 0 1% 4rem;
+}
+.img_filters {
+    width: 24.5%;
+}
+.img_filters:hover {
+    position: relative;
+    bottom: 0.5rem;
+    cursor: pointer;
+    border: 0.2rem white solid;
+}
+
+/* Quote
+--------------------------------------*/
+#strip_end {
+    align-items: flex-start;
+    justify-content: center;
+    padding: 5rem 1.5rem;
+}
+#strip_end img {
+    height: 1.75rem;
+    margin: 0.4rem 0 0 1.75rem;
+}
+
+/* Footer
+--------------------------------------*/
+footer {
+    display:flex;
+    align-items: center;
+    background-color: #9B9B9B;
+    height: 5rem;
+    padding: 0 2rem;
+}
+
+
+@media only screen and (max-width: 768px){
+
+    /* Typography | Tablet + Mobile
+    --------------------------------------*/
+    h1 {
+        font-size: 10vw;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    h3,
+    blockquote {
+        font-size: 1.25rem;
+    }
+    a,
+    p {
+        font-size: 1rem;
+    }
+    
+    /* Header | Tablet + Mobile
+    --------------------------------------*/
+    header {
+        padding: 0 2vw;
+    }
+    #logo_txt {
+       display: none;
+    }
+    #logo_mobile {
+        display: flex;
+        height: 1.85rem;
+        position: relative;
+        top: 0.125rem;
+    }
+    #nav_main {
+        display: none;
+    }
+    #nav_mobile {
+        display: flex;
+        height: 80%;
+        width: 75%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #nav_mobile img {
+        height: 1.5rem;
+        position: relative;
+        top: 0.25rem;
+    }
+    #ig_logo {
+        display: none;
+    }
+    #join_mobile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        background-color: #9DC20A;
+        border: 0;
+        border-radius: 0.25rem;
+        height: 70%;
+        width: 5rem;
+        font-size: 1rem;
+    }
+    
+    /* Start | Tablet + Mobile
+    --------------------------------------*/
+    #strip_start {
+        justify-content: center;
+    }
+    #box_start {
+        height: 20vw;
+        width: 80%;
+        margin: 0;
+        padding: 0;
+        background-color: hsla(0, 0%, 20%, 0.2);
+    }
+    br,
+    button,
+    #txt_start h3,
+    #txt_start p {
+        display: none;
+    }
+    
+    /* Feature | Tablet + Mobile
+    --------------------------------------*/
+    #strip_feature {
+        flex-direction: column;
+        padding: 0.5rem 0;
+    }
+    .box_feature {
+        padding: 1.5rem 1.5rem 2.5rem;
+        margin: 0.5rem 1rem;
+    }
+    .txt_feature {
+        margin-top: 1rem;
+    }
+        
+    /* Filters | Tablet + Mobile
+    --------------------------------------*/
+    #txt_filters {
+        padding: 2rem 1.5rem;
+    }
+    #strip_filters_images {
+        padding: 0;
+    }
+    .img_filters {
+        width: 33.33%;
+    }
+    .img_last {
+        display: none;
+    }
+
+    /* Quote | Tablet + Mobile
+    --------------------------------------*/
+    #strip_end {
+        flex-direction: column;
+        padding: 2rem 1rem;
+        align-items: center;
+        text-align: center;
+    }
+    #strip_end img {
+        margin: 1rem 0 0;
+    }
+}
